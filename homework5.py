@@ -16,6 +16,10 @@ student_name = "Jingjing Bai"
 ############################################################
 # Sudoku Solver
 ############################################################
+def sudoku_cells():
+    return [(i, j) for i in range(9) for j in range(9)]
+
+cell_temp = sudoku_cells()
 
 fileDir = os.path.dirname(os.path.realpath('__file__'))
 
@@ -39,12 +43,6 @@ def read_board(path):
     return board
 #b = read_board("Documents/GitHub/jingjingb-cis5210-hw5/homework5_sudoku/hard1.txt")
 #print(b)
-
-
-
-
-def sudoku_cells():
-    return [(i, j) for i in range(9) for j in range(9)]
 
 same_row = lambda cell1, cell2: cell1[0] == cell2[0]
 same_col = lambda cell1, cell2: cell1[1] == cell2[1]
