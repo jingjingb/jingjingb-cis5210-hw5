@@ -158,7 +158,7 @@ class Sudoku(object):
 
 
 # Just an approximation is fine.
-feedback_question_1 = "4"
+feedback_question_1 = 4
 
 feedback_question_2 = """
 understand the sukudo ideas
